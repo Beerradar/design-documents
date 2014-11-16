@@ -1,0 +1,15 @@
+d": "_design/beerradar",
+   "_rev": "6-6971da615453ead10b5843051c1a191b",
+   "language": "javascript",
+   "views": {
+       "by_untappd_id": {
+           "map": "function(doc) {\n  if (doc.type === 'untappd') {\n    emit(doc.id, doc);\n  }\n}"
+       },
+       "by_vinmonopolet_id": {
+           "map": "function(doc) {\n  if (doc.type === 'vinmonopolet') {\n    emit(doc.id, doc);\n  }\n}"
+       },
+       "by_name": {
+           "map": "function(doc) {\n  emit(doc.name, doc);\n}"
+       }
+   }
+}
