@@ -1,5 +1,4 @@
-d": "_design/beerradar",
-   "_rev": "6-6971da615453ead10b5843051c1a191b",
+{
    "language": "javascript",
    "views": {
        "by_untappd_id": {
